@@ -1077,7 +1077,7 @@ const BUS = {
   /* Estadísticas en los eventos (sin guardar lo que se escribe ni las respuestas) */
   caja.addEventListener('click', e => { const b = e.target.closest('.filtro'); if (b && window.contarEvento) contarEvento('filtro-' + b.dataset.cat); });
   let buscado = false; inp.addEventListener('change', () => { if (!buscado && inp.value.trim() && window.contarEvento) { buscado = true; contarEvento('buscador-usado'); } });
-  reto.addEventListener('submit', () => { const n = reto.querySelectorAll('fieldset.bien').length, r = reto.querySelectorAll('input:checked').length; if (r === 5 && window.contarEvento) contarEvento('reto-' + n + '-de-5'); });
+  reto.addEventListener('submit', () => { const n = reto.querySelectorAll('fieldset.bien').length, r = reto.querySelectorAll('input:checked').length; if (r === 5 && window.contarEvento) { contarEvento('reto-completado'); contarEvento('reto-' + n + '-de-5'); } });
   document.querySelectorAll('.animal details').forEach(d => d.addEventListener('toggle', () => { if (d.open && window.contarEvento) contarEvento('ficha-' + (d.closest('.animal').querySelector('img')?.getAttribute('src') || '').replace(/^.*\/|\.jpg$/g, '')); }));
   document.querySelectorAll('a[target=_blank]').forEach(a => a.addEventListener('click', () => window.contarEvento && contarEvento('fuente-' + new URL(a.href).hostname)));
   document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => { try { document.getElementById('menu').hidePopover(); } catch (e) {} }));
