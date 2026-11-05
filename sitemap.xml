@@ -1,39 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://salvemossushuellas.github.io/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salvemossushuellas.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salvemossushuellas.github.io/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salvemossushuellas.github.io/"/>
     <image:image><image:loc>https://salvemossushuellas.github.io/aguila-filipina.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/aguila-imperial.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/ajolote.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/anfibios-quitridio.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/angelote.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/ballena-azul.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/bonobo.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/buitre-dorsiblanco.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/chimpance.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/condor-california.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/elefante-asiatico.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/elefante-bosque.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/elefante-sabana.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/esturion-beluga.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/foca-monje.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/gavial.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/gorila-occidental.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/grulla-manchuria.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/guacamayo-militar.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/guepardo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/hipopotamo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/jirafa.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/kakapo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/koala.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/lemur-cola-anillada.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/lemur-rufo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/leon.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/leopardo-nieves.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/licaon.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/lince-iberico.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/lobo-etiope.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/mandril.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/mariposa-monarca.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/mono-dorado.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/mono-narigudo.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/mono-yunnan.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/nutria-marina.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/og-salvemos-sus-huellas.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/okapi.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/orangutan-borneo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/ornitorrinco.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/oso-polar.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/panda.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/pangolin.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/picozapato.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/pinguino-africano.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/portada-oso-polar.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/proteo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/quebrantahuesos.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/rana-arboricola.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/rinoceronte-blanco.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/rinoceronte-java.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/rinoceronte-negro.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/saiga.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/tamarino-bicolor.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/tapir-malayo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/tiburon-ballena.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/tigre.jpg</image:loc></image:image>
     <image:image><image:loc>https://salvemossushuellas.github.io/tortuga-angonoka.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/tortuga-carey.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/vaquita.jpg</image:loc></image:image>
+    <image:image><image:loc>https://salvemossushuellas.github.io/vison-europeo.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://salvemossushuellas.github.io/en.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://salvemossushuellas.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://salvemossushuellas.github.io/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://salvemossushuellas.github.io/"/>
   </url>
 </urlset>

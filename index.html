@@ -4,9 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Salvemos sus Huellas · Animales en peligro de extinción</title>
-<meta name="description" content="Salvemos sus Huellas es una ONG que informa y educa sobre los animales en peligro de extinción: 30 especies explicadas, por qué desaparecen y qué puedes hacer tú para protegerlas.">
+<meta name="description" content="Salvemos sus Huellas es una ONG que informa y educa sobre los animales en peligro de extinción: 60 especies explicadas, por qué desaparecen y qué puedes hacer tú para protegerlas.">
 <meta name="theme-color" content="#173a2a">
 <link rel="canonical" href="https://salvemossushuellas.github.io/">
+<link rel="alternate" hreflang="es" href="https://salvemossushuellas.github.io/">
+<link rel="alternate" hreflang="en" href="https://salvemossushuellas.github.io/en.html">
+<link rel="alternate" hreflang="x-default" href="https://salvemossushuellas.github.io/">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://salvemossushuellas.github.io/">
@@ -70,6 +73,9 @@ p{text-wrap:pretty}
 .menu{display:flex;gap:1.3rem;font-weight:600;font-size:.95rem}
 .menu a{text-decoration:none;color:var(--suave)}
 .menu a:hover{color:var(--texto)}
+.cab__der{display:flex;align-items:center;gap:.5rem}
+.idioma{display:inline-grid;place-items:center;min-width:44px;min-height:44px;padding:0 .6rem;border-radius:8px;border:1px solid var(--linea);background:var(--panel);font:700 .85rem var(--f);text-decoration:none;color:var(--texto)}
+.idioma:hover{border-color:var(--hoja)}
 .btn-menu{display:none;min-width:44px;min-height:44px;border-radius:8px;border:1px solid var(--linea);background:var(--panel);color:var(--texto);font-size:1.2rem;cursor:pointer}
 @media (max-width:820px){
   .btn-menu{display:block}
@@ -249,7 +255,7 @@ p{text-wrap:pretty}
     <nav class="menu" id="menu" popover aria-label="Principal">
       <a href="#especies">Especies</a><a href="#causas">Por qué se extinguen</a><a href="#actua">Qué puedes hacer</a><a href="#reto">El reto</a><a href="#nosotros">Quiénes somos</a><a href="#colabora">Colabora</a>
     </nav>
-    <button class="btn-menu" type="button" popovertarget="menu" aria-label="Abrir menú">☰</button>
+    <div class="cab__der"><a class="idioma" href="en.html" hreflang="en" lang="en" title="English version">EN</a><button class="btn-menu" type="button" popovertarget="menu" aria-label="Abrir menú">☰</button></div>
   </div>
 </header>
 
@@ -301,7 +307,7 @@ p{text-wrap:pretty}
     </ol>
     <p>VU, EN y CR son las tres categorías de «amenazada». Una especie extinta ya no se puede recuperar.</p>
   </figure>
-  <div class="resumen" role="img" aria-label="Reparto de las 30 especies por categoría: 11 en peligro crítico, 6 en peligro, 9 vulnerable, 1 casi amenazada, 3 preocupación menor"><a href="#cat-CR" style="flex:11;--c:var(--CR);--ct:#fff" title="En peligro crítico: 11">11</a><a href="#cat-EN" style="flex:6;--c:var(--EN);--ct:#1b2a21" title="En peligro: 6">6</a><a href="#cat-VU" style="flex:9;--c:var(--VU);--ct:#1b2a21" title="Vulnerable: 9">9</a><a href="#cat-NT" style="flex:1;--c:var(--NT);--ct:#1b2a21" title="Casi amenazada: 1">1</a><a href="#cat-LC" style="flex:3;--c:var(--LC);--ct:#1b2a21" title="Preocupación menor: 3">3</a></div><p class="resumen-ley">De las 30 especies de esta web, 26 están amenazadas (VU, EN o CR). Pulsa un color para ir a su categoría.</p>
+  <div class="resumen" role="img" aria-label="Reparto de las 60 especies por categoría: 21 en peligro crítico, 16 en peligro, 16 vulnerable, 4 casi amenazada, 3 preocupación menor"><a href="#cat-CR" style="flex:21;--c:var(--CR);--ct:#fff" title="En peligro crítico: 21">21</a><a href="#cat-EN" style="flex:16;--c:var(--EN);--ct:#1b2a21" title="En peligro: 16">16</a><a href="#cat-VU" style="flex:16;--c:var(--VU);--ct:#1b2a21" title="Vulnerable: 16">16</a><a href="#cat-NT" style="flex:4;--c:var(--NT);--ct:#1b2a21" title="Casi amenazada: 4">4</a><a href="#cat-LC" style="flex:3;--c:var(--LC);--ct:#1b2a21" title="Preocupación menor: 3">3</a></div><p class="resumen-ley">De las 60 especies de esta web, 53 están amenazadas (VU, EN o CR). Pulsa un color para ir a su categoría.</p>
   <div class="buscar" id="buscar-caja" hidden>
     <label for="buscar">Buscar un animal</label>
     <input id="buscar" type="search" placeholder="Ej.: lince, tigre, Madagascar…" autocomplete="off" enterkeyhint="search">
@@ -316,7 +322,7 @@ p{text-wrap:pretty}
     <button class="filtro" type="button" data-cat="LC" aria-pressed="false"><i style="background:var(--LC)"></i>Preocupaci&#243;n menor</button>
   </div>
     <div class="categoria" id="cat-CR" data-cat="CR" style="--c:var(--CR);--ct:#fff">
-    <div class="categoria__cab"><span class="sigla">CR</span><h3>En peligro cr&#237;tico</h3><p>Riesgo extremadamente alto de extinci&#243;n en estado silvestre. 11 especies en esta web.</p></div>
+    <div class="categoria__cab"><span class="sigla">CR</span><h3>En peligro cr&#237;tico</h3><p>Riesgo extremadamente alto de extinci&#243;n en estado silvestre. 21 especies en esta web.</p></div>
     <div class="tarjetas">
       <article class="animal" style="--c:var(--CR);--ct:#fff">
         <figure class="foto" data-label="Foto: Ajolote"><img src="ajolote.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Ajolote (Ambystoma mexicanum)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
@@ -417,10 +423,100 @@ p{text-wrap:pretty}
           <details><summary>Saber más</summary><p>Tibur&#243;n aplanado que vive enterrado en la arena. Ha desaparecido de gran parte de su antigua &#225;rea; Canarias es hoy uno de sus &#250;ltimos refugios.</p><ul class="amenazas" aria-label="Amenazas"><li>Captura accidental en redes de pesca</li><li>P&#233;rdida de h&#225;bitat costero</li></ul><p class="creditos-animal">Foto: Julien Renoult · <a href="https://commons.wikimedia.org/wiki/File:Squatina_squatina_120867959.jpg" rel="noopener" target="_blank">CC BY 4.0</a></p></details>
         </div>
       </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: Elefante africano de bosque"><img src="elefante-bosque.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Elefante africano de bosque (Loxodonta cyclotis)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>Elefante africano de bosque</h4>
+          <span class="cientifico">Loxodonta cyclotis</span>
+          <span class="zona">📍 Selvas de &#193;frica central y occidental</span>
+          <details><summary>Saber más</summary><p>M&#225;s peque&#241;o que el de sabana y con los colmillos rectos. Al comer frutas y dispersar sus semillas, ayuda a crecer a la selva. Su poblaci&#243;n cay&#243; m&#225;s de un 86 % en 31 a&#241;os y desde 2021 est&#225; en peligro cr&#237;tico.</p><ul class="amenazas" aria-label="Amenazas"><li>Caza furtiva por el marfil</li><li>P&#233;rdida de selva</li></ul><p class="creditos-animal">Foto: Thomas Breuer · <a href="https://commons.wikimedia.org/wiki/File:Loxodontacyclotis.jpg" rel="noopener" target="_blank">CC BY 2.5</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: Rinoceronte negro"><img src="rinoceronte-negro.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Rinoceronte negro (Diceros bicornis)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>Rinoceronte negro</h4>
+          <span class="cientifico">Diceros bicornis</span>
+          <span class="zona">📍 &#193;frica oriental y del sur</span>
+          <details><summary>Saber más</summary><p>Su cuerno es de queratina, como nuestras u&#241;as, pero se paga a precio de oro en el mercado ilegal. En los a&#241;os 90 quedaban unos 2.500; gracias a la vigilancia de las reservas hoy son algo m&#225;s de 6.000, pero sigue en peligro cr&#237;tico.</p><ul class="amenazas" aria-label="Amenazas"><li>Caza furtiva por el cuerno</li></ul><p class="creditos-animal">Foto: Diego Delso · <a href="https://commons.wikimedia.org/wiki/File:Rinoceronte_negro_(Diceros_bicornis),_parque_nacional_del_lago_Nakuru,_Kenia,_2024-05-18,_DD_74.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: Rinoceronte de Java"><img src="rinoceronte-java.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Rinoceronte de Java (Rhinoceros sondaicus)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>Rinoceronte de Java</h4>
+          <span class="cientifico">Rhinoceros sondaicus</span>
+          <span class="zona">📍 Parque Nacional de Ujung Kulon (Indonesia)</span>
+          <details><summary>Saber más</summary><p>Uno de los mam&#237;feros m&#225;s raros del planeta: solo queda una poblaci&#243;n, de menos de 80 ejemplares, en un &#250;nico parque de la isla de Java.</p><ul class="amenazas" aria-label="Amenazas"><li>Poblaci&#243;n diminuta en un solo lugar</li><li>Caza furtiva</li><li>Desastres naturales (tsunamis, volc&#225;n Krakatoa)</li></ul><p class="creditos-animal">Foto: Scott Nelson · <a href="https://commons.wikimedia.org/wiki/File:Lesser_One_Horned_Rhinoceros_Rhinoceros_Sondaicus_(53549614).jpeg" rel="noopener" target="_blank">CC BY 3.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: Orangut&#225;n de Borneo"><img src="orangutan-borneo.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Orangut&#225;n de Borneo (Pongo pygmaeus)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>Orangut&#225;n de Borneo</h4>
+          <span class="cientifico">Pongo pygmaeus</span>
+          <span class="zona">📍 Isla de Borneo (Indonesia y Malasia)</span>
+          <details><summary>Saber más</summary><p>El gran simio que pasa m&#225;s tiempo en los &#225;rboles. Cada noche se fabrica una cama nueva con ramas. Las cr&#237;as viven con su madre unos 7 u 8 a&#241;os.</p><ul class="amenazas" aria-label="Amenazas"><li>Tala de la selva</li><li>Plantaciones de palma aceitera</li><li>Incendios</li><li>Caza y comercio de cr&#237;as</li></ul><p class="creditos-animal">Foto: Ridwan0810 · <a href="https://commons.wikimedia.org/wiki/File:Orangutan_Kalimantan.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: Vaquita marina"><img src="vaquita.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Vaquita marina (Phocoena sinus)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>Vaquita marina</h4>
+          <span class="cientifico">Phocoena sinus</span>
+          <span class="zona">📍 Norte del golfo de California (M&#233;xico)</span>
+          <details><summary>Saber más</summary><p>La marsopa m&#225;s peque&#241;a del mundo y el mam&#237;fero marino m&#225;s amenazado: se calcula que quedan alrededor de 10 ejemplares. Muere atrapada en redes que se ponen ilegalmente para pescar otro pez, la totoaba.</p><ul class="amenazas" aria-label="Amenazas"><li>Redes de enmalle ilegales para pescar totoaba</li></ul><p class="creditos-animal">Foto: Paula Olson, NOAA · <a href="https://commons.wikimedia.org/wiki/File:Vaquita4_Olson_NOAA.jpg" rel="noopener" target="_blank">Public domain</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: Tortuga carey"><img src="tortuga-carey.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Tortuga carey (Eretmochelys imbricata)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>Tortuga carey</h4>
+          <span class="cientifico">Eretmochelys imbricata</span>
+          <span class="zona">📍 Arrecifes de coral de los oc&#233;anos tropicales</span>
+          <details><summary>Saber más</summary><p>Su pico curvo le permite sacar esponjas de las grietas del coral, y as&#237; ayuda a mantener sanos los arrecifes. Durante siglos se la caz&#243; por su precioso caparaz&#243;n.</p><ul class="amenazas" aria-label="Amenazas"><li>Comercio de su caparaz&#243;n (&#171;carey&#187;)</li><li>Recogida de huevos</li><li>Pl&#225;sticos y redes de pesca</li><li>P&#233;rdida de playas de anidaci&#243;n</li></ul><p class="creditos-animal">Foto: Diego Delso · <a href="https://commons.wikimedia.org/wiki/File:Tortuga_carey_(Eretmochelys_imbricata),_parque_nacional_Ras_Muhammad,_Egipto,_2022-03-28,_DD_56.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: Ping&#252;ino africano"><img src="pinguino-africano.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Ping&#252;ino africano (Spheniscus demersus)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>Ping&#252;ino africano</h4>
+          <span class="cientifico">Spheniscus demersus</span>
+          <span class="zona">📍 Costas de Sud&#225;frica y Namibia</span>
+          <details><summary>Saber más</summary><p>El &#250;nico ping&#252;ino que cr&#237;a en &#193;frica. Su poblaci&#243;n ha ca&#237;do tanto que en 2024 pas&#243; a estar en peligro cr&#237;tico: es la primera especie de ping&#252;ino con esa categor&#237;a.</p><ul class="amenazas" aria-label="Amenazas"><li>Falta de sardinas y anchoas por la sobrepesca</li><li>Cambio clim&#225;tico</li><li>Vertidos de petr&#243;leo</li></ul><p class="creditos-animal">Foto: Sander Spek · <a href="https://commons.wikimedia.org/wiki/File:Sander-pinguins.jpg" rel="noopener" target="_blank">Public domain</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: Vis&#243;n europeo"><img src="vison-europeo.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Vis&#243;n europeo (Mustela lutreola)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>Vis&#243;n europeo</h4>
+          <span class="cientifico">Mustela lutreola</span>
+          <span class="zona">📍 Europa (en Espa&#241;a: Navarra, La Rioja, Pa&#237;s Vasco, Castilla y Le&#243;n y Arag&#243;n)</span>
+          <details><summary>Saber más</summary><p>Uno de los mam&#237;feros m&#225;s amenazados de Europa. Vive junto a r&#237;os y humedales. Su gran enemigo es el vis&#243;n americano, escapado de granjas peleteras, que le quita el sitio y le contagia enfermedades.</p><ul class="amenazas" aria-label="Amenazas"><li>Competencia con el vis&#243;n americano invasor</li><li>P&#233;rdida de r&#237;os y riberas</li><li>Atropellos</li></ul><p class="creditos-animal">Foto: zoofanatic · <a href="https://commons.wikimedia.org/wiki/File:European_Mink_at_Osnabr%C3%BCck_Zoo_01.jpg" rel="noopener" target="_blank">CC BY 2.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: Kakapo"><img src="kakapo.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Kakapo (Strigops habroptila)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>Kakapo</h4>
+          <span class="cientifico">Strigops habroptila</span>
+          <span class="zona">📍 Islas sin depredadores de Nueva Zelanda</span>
+          <details><summary>Saber más</summary><p>Un loro que no puede volar, sale de noche y huele a miel. Todos los ejemplares que quedan, unos 240, tienen nombre y est&#225;n vigilados uno a uno por los conservacionistas.</p><ul class="amenazas" aria-label="Amenazas"><li>Depredadores introducidos (gatos, ratas, armi&#241;os)</li><li>Poblaci&#243;n muy peque&#241;a</li></ul><p class="creditos-animal">Foto: Department of Conservation · <a href="https://commons.wikimedia.org/wiki/File:Kakapo_Sirocco_1.jpg" rel="noopener" target="_blank">CC BY 2.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--CR);--ct:#fff">
+        <figure class="foto" data-label="Foto: C&#243;ndor de California"><img src="condor-california.jpg" width="800" height="600" loading="lazy" decoding="async" alt="C&#243;ndor de California (Gymnogyps californianus)" onerror="sinFoto(this)"><span class="estado">CR · En peligro cr&#237;tico</span></figure>
+        <div class="animal__txt">
+          <h4>C&#243;ndor de California</h4>
+          <span class="cientifico">Gymnogyps californianus</span>
+          <span class="zona">📍 Oeste de Estados Unidos y norte de M&#233;xico</span>
+          <details><summary>Saber más</summary><p>En 1987 solo quedaban 27 y se capturaron todos para criarlos. Gracias a eso hoy vuelven a volar en libertad varios centenares, aunque el plomo de los perdigones sigue envenen&#225;ndolos.</p><ul class="amenazas" aria-label="Amenazas"><li>Intoxicaci&#243;n por plomo de la munici&#243;n de caza</li><li>Basura y microbasura</li></ul><p class="creditos-animal">Foto: Stacy from San Diego · <a href="https://commons.wikimedia.org/wiki/File:Gymnogyps_californianus_-San_Diego_Zoo-8a.jpg" rel="noopener" target="_blank">CC BY 2.0</a></p></details>
+        </div>
+      </article>
     </div>
   </div>
   <div class="categoria" id="cat-EN" data-cat="EN" style="--c:var(--EN);--ct:#1b2a21">
-    <div class="categoria__cab"><span class="sigla">EN</span><h3>En peligro</h3><p>Riesgo muy alto de extinci&#243;n en estado silvestre. 6 especies en esta web.</p></div>
+    <div class="categoria__cab"><span class="sigla">EN</span><h3>En peligro</h3><p>Riesgo muy alto de extinci&#243;n en estado silvestre. 16 especies en esta web.</p></div>
     <div class="tarjetas">
       <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
         <figure class="foto" data-label="Foto: Mono dorado de nariz chata"><img src="mono-dorado.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Mono dorado de nariz chata (Rhinopithecus roxellana)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
@@ -476,10 +572,100 @@ p{text-wrap:pretty}
           <details><summary>Saber más</summary><p>El felino m&#225;s grande del mundo. Ha perdido la mayor parte de su antigua &#225;rea de distribuci&#243;n, aunque en algunos pa&#237;ses su poblaci&#243;n vuelve a crecer gracias a la protecci&#243;n.</p><ul class="amenazas" aria-label="Amenazas"><li>Caza furtiva</li><li>P&#233;rdida de h&#225;bitat</li><li>Conflicto con las personas</li></ul><p class="creditos-animal">Foto: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
         </div>
       </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Elefante africano de sabana"><img src="elefante-sabana.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Elefante africano de sabana (Loxodonta africana)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Elefante africano de sabana</h4>
+          <span class="cientifico">Loxodonta africana</span>
+          <span class="zona">📍 Sabanas de &#193;frica subsahariana</span>
+          <details><summary>Saber más</summary><p>El animal terrestre m&#225;s grande del mundo: un macho puede pesar m&#225;s de 6 toneladas. Las manadas las gu&#237;an las hembras m&#225;s viejas, que recuerdan d&#243;nde hay agua en las &#233;pocas secas.</p><ul class="amenazas" aria-label="Amenazas"><li>Caza furtiva por el marfil</li><li>P&#233;rdida y fragmentaci&#243;n del h&#225;bitat</li><li>Conflictos con agricultores</li></ul><p class="creditos-animal">Foto: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Desert_elephant_(Loxodonta_africana)_spraying_sand.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Elefante asi&#225;tico"><img src="elefante-asiatico.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Elefante asi&#225;tico (Elephas maximus)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Elefante asi&#225;tico</h4>
+          <span class="cientifico">Elephas maximus</span>
+          <span class="zona">📍 India, Sri Lanka y sudeste de Asia</span>
+          <details><summary>Saber más</summary><p>M&#225;s peque&#241;o que el africano y con las orejas m&#225;s redondeadas. Solo algunos machos tienen colmillos largos. Necesita grandes territorios que cada vez est&#225;n m&#225;s ocupados por cultivos.</p><ul class="amenazas" aria-label="Amenazas"><li>P&#233;rdida de bosques</li><li>Conflictos con agricultores</li><li>Caza furtiva</li></ul><p class="creditos-animal">Foto: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Sri_Lankan_elephant_(Elephas_maximus_maximus)_female_and_young_6.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Bonobo"><img src="bonobo.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Bonobo (Pan paniscus)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Bonobo</h4>
+          <span class="cientifico">Pan paniscus</span>
+          <span class="zona">📍 Selvas de la Rep&#250;blica Democr&#225;tica del Congo</span>
+          <details><summary>Saber más</summary><p>Junto con el chimpanc&#233;, nuestro pariente vivo m&#225;s cercano. Vive en grupos dirigidos por las hembras y resuelve los conflictos de forma pac&#237;fica. Solo existe en un pa&#237;s del mundo.</p><ul class="amenazas" aria-label="Amenazas"><li>Caza para carne</li><li>P&#233;rdida de selva</li><li>Conflictos armados</li></ul><p class="creditos-animal">Foto: Hans Hillewaert · <a href="https://commons.wikimedia.org/wiki/File:Pan_paniscus_(female).jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Ballena azul"><img src="ballena-azul.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Ballena azul (Balaenoptera musculus)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Ballena azul</h4>
+          <span class="cientifico">Balaenoptera musculus</span>
+          <span class="zona">📍 Todos los oc&#233;anos</span>
+          <details><summary>Saber más</summary><p>El animal m&#225;s grande que ha existido jam&#225;s: puede medir unos 30 metros. La caza ballenera del siglo XX la llev&#243; al borde de la extinci&#243;n. Desde que se prohibi&#243; se recupera muy despacio.</p><ul class="amenazas" aria-label="Amenazas"><li>Choques con barcos</li><li>Ruido submarino</li><li>Cambio clim&#225;tico (menos kril)</li><li>Enredos en redes</li></ul><p class="creditos-animal">Foto: NMFS Northeast Fisheries Science Center (NOAA) · <a href="https://commons.wikimedia.org/wiki/File:Bluewhale877.jpg" rel="noopener" target="_blank">Public domain</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Tibur&#243;n ballena"><img src="tiburon-ballena.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Tibur&#243;n ballena (Rhincodon typus)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Tibur&#243;n ballena</h4>
+          <span class="cientifico">Rhincodon typus</span>
+          <span class="zona">📍 Mares tropicales y c&#225;lidos de todo el mundo</span>
+          <details><summary>Saber más</summary><p>El pez m&#225;s grande del mundo, que puede superar los 12 metros, pero inofensivo: se alimenta de plancton filtrando el agua. Cada ejemplar tiene un dibujo de manchas &#250;nico, como una huella dactilar.</p><ul class="amenazas" aria-label="Amenazas"><li>Pesca y captura accidental</li><li>Choques con barcos</li></ul><p class="creditos-animal">Foto: Arturo de Frias Marques · <a href="https://commons.wikimedia.org/wiki/File:Whale_Shark_AdF.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Lobo et&#237;ope"><img src="lobo-etiope.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Lobo et&#237;ope (Canis simensis)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Lobo et&#237;ope</h4>
+          <span class="cientifico">Canis simensis</span>
+          <span class="zona">📍 Monta&#241;as de Etiop&#237;a</span>
+          <details><summary>Saber más</summary><p>El c&#225;nido m&#225;s amenazado de &#193;frica: quedan menos de 500 adultos. Vive por encima de los 3.000 metros y se alimenta sobre todo de ratas topo.</p><ul class="amenazas" aria-label="Amenazas"><li>Enfermedades de los perros (rabia y moquillo)</li><li>P&#233;rdida de praderas de monta&#241;a</li></ul><p class="creditos-animal">Foto: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Ethiopian_wolf_(Canis_simensis_citernii)_2.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Lica&#243;n o perro salvaje africano"><img src="licaon.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Lica&#243;n o perro salvaje africano (Lycaon pictus)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Lica&#243;n o perro salvaje africano</h4>
+          <span class="cientifico">Lycaon pictus</span>
+          <span class="zona">📍 Sabanas de &#193;frica oriental y del sur</span>
+          <details><summary>Saber más</summary><p>Cada lica&#243;n tiene un pelaje de manchas distinto. Cazan en equipo y comparten la comida con las cr&#237;as y con los miembros enfermos o heridos de la manada.</p><ul class="amenazas" aria-label="Amenazas"><li>Fragmentaci&#243;n del h&#225;bitat</li><li>Conflictos con ganaderos</li><li>Enfermedades de los perros</li></ul><p class="creditos-animal">Foto: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:African_wild_dog_(Lycaon_pictus_pictus)_head.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Nutria marina"><img src="nutria-marina.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Nutria marina (Enhydra lutris)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Nutria marina</h4>
+          <span class="cientifico">Enhydra lutris</span>
+          <span class="zona">📍 Costas del Pac&#237;fico norte (de Jap&#243;n a California)</span>
+          <details><summary>Saber más</summary><p>Tiene el pelaje m&#225;s denso del reino animal. Usa piedras como herramienta para abrir erizos y moluscos, y al comerse a los erizos protege los bosques de algas.</p><ul class="amenazas" aria-label="Amenazas"><li>Vertidos de petr&#243;leo</li><li>Enfermedades</li><li>Captura accidental</li></ul><p class="creditos-animal">Foto: Mike Baird from Morro Bay, USA (bairdphotos.com) · <a href="https://commons.wikimedia.org/wiki/File:Sea-otter-morro-bay_13.jpg" rel="noopener" target="_blank">CC BY 2.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Okapi"><img src="okapi.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Okapi (Okapia johnstoni)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Okapi</h4>
+          <span class="cientifico">Okapia johnstoni</span>
+          <span class="zona">📍 Selva de Ituri (Rep&#250;blica Democr&#225;tica del Congo)</span>
+          <details><summary>Saber más</summary><p>Parece una mezcla de cebra y caballo, pero es el &#250;nico pariente vivo de la jirafa. Es tan esquivo que la ciencia no lo describi&#243; hasta 1901.</p><ul class="amenazas" aria-label="Amenazas"><li>Caza furtiva</li><li>Miner&#237;a y tala ilegales</li><li>Conflictos armados</li></ul><p class="creditos-animal">Foto: k7hpn · <a href="https://commons.wikimedia.org/wiki/File:Okapi_(Okapia_johnstoni).jpg" rel="noopener" target="_blank">CC BY 2.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--EN);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Tapir malayo"><img src="tapir-malayo.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Tapir malayo (Tapirus indicus)" onerror="sinFoto(this)"><span class="estado">EN · En peligro</span></figure>
+        <div class="animal__txt">
+          <h4>Tapir malayo</h4>
+          <span class="cientifico">Tapirus indicus</span>
+          <span class="zona">📍 Sudeste de Asia (Malasia, Tailandia, Sumatra)</span>
+          <details><summary>Saber más</summary><p>Su pelaje blanco y negro le sirve de camuflaje en la selva por la noche. Usa su nariz flexible, una peque&#241;a trompa, para arrancar hojas y frutos.</p><ul class="amenazas" aria-label="Amenazas"><li>Tala de la selva</li><li>Plantaciones</li><li>Atropellos</li></ul><p class="creditos-animal">Foto: Another one of my pictures:[[File:|150x150px]] This photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract. · <a href="https://commons.wikimedia.org/wiki/File:Tapirus_indicus_(Tapir_de_Malaisie)_-_450.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
     </div>
   </div>
   <div class="categoria" id="cat-VU" data-cat="VU" style="--c:var(--VU);--ct:#1b2a21">
-    <div class="categoria__cab"><span class="sigla">VU</span><h3>Vulnerable</h3><p>Riesgo alto de extinci&#243;n en estado silvestre. 9 especies en esta web.</p></div>
+    <div class="categoria__cab"><span class="sigla">VU</span><h3>Vulnerable</h3><p>Riesgo alto de extinci&#243;n en estado silvestre. 16 especies en esta web.</p></div>
     <div class="tarjetas">
       <article class="animal" style="--c:var(--VU);--ct:#1b2a21">
         <figure class="foto" data-label="Foto: Mandril"><img src="mandril.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Mandril (Mandrillus sphinx)" onerror="sinFoto(this)"><span class="estado">VU · Vulnerable</span></figure>
@@ -562,10 +748,73 @@ p{text-wrap:pretty}
           <details><summary>Saber más</summary><p>Ave enorme con un pico en forma de zapato. Puede quedarse inm&#243;vil durante mucho tiempo esperando a sus presas.</p><ul class="amenazas" aria-label="Amenazas"><li>P&#233;rdida de pantanos</li><li>Captura de pollos para el comercio</li></ul><p class="creditos-animal">Foto: Olaf Oliviero Riemer · <a href="https://commons.wikimedia.org/wiki/File:Balaeniceps_rex_(Schuhschnabel_-_Shoebill)_-_Weltvogelpark_Walsrode_2010-10.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></p></details>
         </div>
       </article>
+      <article class="animal" style="--c:var(--VU);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Guepardo"><img src="guepardo.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Guepardo (Acinonyx jubatus)" onerror="sinFoto(this)"><span class="estado">VU · Vulnerable</span></figure>
+        <div class="animal__txt">
+          <h4>Guepardo</h4>
+          <span class="cientifico">Acinonyx jubatus</span>
+          <span class="zona">📍 &#193;frica y una peque&#241;a poblaci&#243;n en Ir&#225;n</span>
+          <details><summary>Saber más</summary><p>El animal terrestre m&#225;s r&#225;pido: puede superar los 100 km/h en pocos segundos. Quedan unos 7.000 adultos y han desaparecido de la mayor parte de su antigua &#225;rea de distribuci&#243;n.</p><ul class="amenazas" aria-label="Amenazas"><li>P&#233;rdida de h&#225;bitat y de presas</li><li>Conflictos con ganaderos</li><li>Tr&#225;fico de cr&#237;as como mascotas</li></ul><p class="creditos-animal">Foto: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Cheetah_(Acinonyx_jubatus)_female_2.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--VU);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Le&#243;n"><img src="leon.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Le&#243;n (Panthera leo)" onerror="sinFoto(this)"><span class="estado">VU · Vulnerable</span></figure>
+        <div class="animal__txt">
+          <h4>Le&#243;n</h4>
+          <span class="cientifico">Panthera leo</span>
+          <span class="zona">📍 &#193;frica subsahariana y el bosque de Gir (India)</span>
+          <details><summary>Saber más</summary><p>El &#250;nico felino que vive en grupos. Aunque es un s&#237;mbolo de fuerza, en las &#250;ltimas d&#233;cadas su poblaci&#243;n ha ca&#237;do mucho y ha desaparecido de muchos pa&#237;ses africanos.</p><ul class="amenazas" aria-label="Amenazas"><li>Conflictos con ganaderos</li><li>P&#233;rdida de presas y de h&#225;bitat</li><li>Caza ilegal</li></ul><p class="creditos-animal">Foto: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Lion_(Panthera_leo)_old_male_Chobe.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--VU);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Jirafa"><img src="jirafa.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Jirafa (Giraffa camelopardalis)" onerror="sinFoto(this)"><span class="estado">VU · Vulnerable</span></figure>
+        <div class="animal__txt">
+          <h4>Jirafa</h4>
+          <span class="cientifico">Giraffa camelopardalis</span>
+          <span class="zona">📍 Sabanas de &#193;frica</span>
+          <details><summary>Saber más</summary><p>El animal m&#225;s alto del mundo. Su cuello tiene solo siete v&#233;rtebras, como el nuestro, pero cada una puede medir unos 25 cm. Su poblaci&#243;n cay&#243; con fuerza a finales del siglo XX, en lo que se llam&#243; una &#171;extinci&#243;n silenciosa&#187;.</p><ul class="amenazas" aria-label="Amenazas"><li>P&#233;rdida de h&#225;bitat</li><li>Caza ilegal</li><li>Conflictos armados</li></ul><p class="creditos-animal">Foto: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:South_African_giraffe_(Giraffa_camelopardalis_giraffa)_head_with_oxpecker_Kruger.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--VU);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Hipop&#243;tamo"><img src="hipopotamo.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Hipop&#243;tamo (Hippopotamus amphibius)" onerror="sinFoto(this)"><span class="estado">VU · Vulnerable</span></figure>
+        <div class="animal__txt">
+          <h4>Hipop&#243;tamo</h4>
+          <span class="cientifico">Hippopotamus amphibius</span>
+          <span class="zona">📍 R&#237;os y lagos de &#193;frica subsahariana</span>
+          <details><summary>Saber más</summary><p>Pasa el d&#237;a en el agua para protegerse del sol y sale de noche a comer hierba. Su piel produce un l&#237;quido rojizo que funciona como protector solar.</p><ul class="amenazas" aria-label="Amenazas"><li>Caza por su carne y por el marfil de sus dientes</li><li>P&#233;rdida de r&#237;os y humedales</li></ul><p class="creditos-animal">Foto: Diego Delso · <a href="https://commons.wikimedia.org/wiki/File:Hipop%C3%B3tamo_(Hippopotamus_amphibius),_parque_nacional_de_Chobe,_Botsuana,_2018-07-28,_DD_82.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--VU);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Koala"><img src="koala.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Koala (Phascolarctos cinereus)" onerror="sinFoto(this)"><span class="estado">VU · Vulnerable</span></figure>
+        <div class="animal__txt">
+          <h4>Koala</h4>
+          <span class="cientifico">Phascolarctos cinereus</span>
+          <span class="zona">📍 Este de Australia</span>
+          <details><summary>Saber más</summary><p>Se alimenta casi solo de hojas de eucalipto, tan poco nutritivas que duerme hasta 20 horas al d&#237;a. Los incendios de 2019-2020 mataron a miles de koalas.</p><ul class="amenazas" aria-label="Amenazas"><li>Tala de eucaliptos</li><li>Incendios forestales y sequ&#237;as</li><li>Atropellos y ataques de perros</li><li>Enfermedades</li></ul><p class="creditos-animal">Foto: Till Niermann · <a href="https://commons.wikimedia.org/wiki/File:Koala_in_Zoo_Duisburg.jpg" rel="noopener" target="_blank">CC BY 3.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--VU);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Foca monje del Mediterr&#225;neo"><img src="foca-monje.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Foca monje del Mediterr&#225;neo (Monachus monachus)" onerror="sinFoto(this)"><span class="estado">VU · Vulnerable</span></figure>
+        <div class="animal__txt">
+          <h4>Foca monje del Mediterr&#225;neo</h4>
+          <span class="cientifico">Monachus monachus</span>
+          <span class="zona">📍 Mediterr&#225;neo oriental (Grecia, Turqu&#237;a) y costa atl&#225;ntica de &#193;frica y Madeira</span>
+          <details><summary>Saber más</summary><p>La foca m&#225;s amenazada de Europa. Antes viv&#237;a en las costas de Espa&#241;a, incluidas las Baleares y las Chafarinas. Gracias a su protecci&#243;n se est&#225; recuperando y en 2023 pas&#243; de &#171;en peligro&#187; a &#171;vulnerable&#187;.</p><ul class="amenazas" aria-label="Amenazas"><li>Molestias en sus cuevas de cr&#237;a</li><li>Captura accidental en redes</li><li>Contaminaci&#243;n</li></ul><p class="creditos-animal">Foto: Wanax01 · <a href="https://commons.wikimedia.org/wiki/File:Young_monk_seal.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--VU);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: &#193;guila imperial ib&#233;rica"><img src="aguila-imperial.jpg" width="800" height="600" loading="lazy" decoding="async" alt="&#193;guila imperial ib&#233;rica (Aquila adalberti)" onerror="sinFoto(this)"><span class="estado">VU · Vulnerable</span></figure>
+        <div class="animal__txt">
+          <h4>&#193;guila imperial ib&#233;rica</h4>
+          <span class="cientifico">Aquila adalberti</span>
+          <span class="zona">📍 Centro y sur de la pen&#237;nsula ib&#233;rica</span>
+          <details><summary>Saber más</summary><p>Solo vive en la pen&#237;nsula ib&#233;rica. En los a&#241;os 70 quedaban unas 50 parejas; gracias a la correcci&#243;n de tendidos el&#233;ctricos y a la lucha contra el veneno hoy son varios centenares.</p><ul class="amenazas" aria-label="Amenazas"><li>Venenos ilegales</li><li>Electrocuci&#243;n en tendidos el&#233;ctricos</li><li>Escasez de conejo</li></ul><p class="creditos-animal">Foto: Juan lacruz · <a href="https://commons.wikimedia.org/wiki/File:Aquila_adalberti_(ad.).jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
     </div>
   </div>
   <div class="categoria" id="cat-NT" data-cat="NT" style="--c:var(--NT);--ct:#1b2a21">
-    <div class="categoria__cab"><span class="sigla">NT</span><h3>Casi amenazada</h3><p>Cerca de entrar en una categor&#237;a de amenaza. 1 especies en esta web.</p></div>
+    <div class="categoria__cab"><span class="sigla">NT</span><h3>Casi amenazada</h3><p>Cerca de entrar en una categor&#237;a de amenaza. 4 especies en esta web.</p></div>
     <div class="tarjetas">
       <article class="animal" style="--c:var(--NT);--ct:#1b2a21">
         <figure class="foto" data-label="Foto: Ant&#237;lope saiga"><img src="saiga.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Ant&#237;lope saiga (Saiga tatarica)" onerror="sinFoto(this)"><span class="estado">NT · Casi amenazada</span></figure>
@@ -574,6 +823,33 @@ p{text-wrap:pretty}
           <span class="cientifico">Saiga tatarica</span>
           <span class="zona">📍 Estepas de Kazajist&#225;n y Mongolia</span>
           <details><summary>Saber más</summary><p>Ant&#237;lope de nariz abultada que filtra el polvo de la estepa. Tras estar al borde de la extinci&#243;n, su poblaci&#243;n se ha recuperado y en 2023 pas&#243; a &#171;casi amenazado&#187;.</p><ul class="amenazas" aria-label="Amenazas"><li>Caza para el comercio de cuernos</li><li>Brotes de enfermedades</li></ul><p class="creditos-animal">Foto: Andrey Giljov · <a href="https://commons.wikimedia.org/wiki/File:Saiga_antelope_at_the_Stepnoi_Sanctuary.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--NT);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Rinoceronte blanco"><img src="rinoceronte-blanco.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Rinoceronte blanco (Ceratotherium simum)" onerror="sinFoto(this)"><span class="estado">NT · Casi amenazada</span></figure>
+        <div class="animal__txt">
+          <h4>Rinoceronte blanco</h4>
+          <span class="cientifico">Ceratotherium simum</span>
+          <span class="zona">📍 Sur de &#193;frica</span>
+          <details><summary>Saber más</summary><p>Un &#233;xito de la conservaci&#243;n: a principios del siglo XX quedaban menos de 100 en Sud&#225;frica y hoy son miles. Pero la subespecie del norte ya solo cuenta con dos hembras en el mundo.</p><ul class="amenazas" aria-label="Amenazas"><li>Caza furtiva por el cuerno</li></ul><p class="creditos-animal">Foto: Giles Laurent · <a href="https://commons.wikimedia.org/wiki/File:075_White_rhinoceros_mother_and_her_newborn_baby_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--NT);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Ornitorrinco"><img src="ornitorrinco.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Ornitorrinco (Ornithorhynchus anatinus)" onerror="sinFoto(this)"><span class="estado">NT · Casi amenazada</span></figure>
+        <div class="animal__txt">
+          <h4>Ornitorrinco</h4>
+          <span class="cientifico">Ornithorhynchus anatinus</span>
+          <span class="zona">📍 R&#237;os del este de Australia y Tasmania</span>
+          <details><summary>Saber más</summary><p>Un mam&#237;fero que pone huevos, tiene pico de pato y los machos tienen un espol&#243;n venenoso. Caza bajo el agua con los ojos cerrados, detectando la electricidad de sus presas.</p><ul class="amenazas" aria-label="Amenazas"><li>Sequ&#237;as y presas en los r&#237;os</li><li>Redes y trampas de pesca</li><li>Cambio clim&#225;tico</li></ul><p class="creditos-animal">Foto: Charles J. Sharp · <a href="https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></p></details>
+        </div>
+      </article>
+      <article class="animal" style="--c:var(--NT);--ct:#1b2a21">
+        <figure class="foto" data-label="Foto: Quebrantahuesos"><img src="quebrantahuesos.jpg" width="800" height="600" loading="lazy" decoding="async" alt="Quebrantahuesos (Gypaetus barbatus)" onerror="sinFoto(this)"><span class="estado">NT · Casi amenazada</span></figure>
+        <div class="animal__txt">
+          <h4>Quebrantahuesos</h4>
+          <span class="cientifico">Gypaetus barbatus</span>
+          <span class="zona">📍 Monta&#241;as de Europa, Asia y &#193;frica (en Espa&#241;a, Pirineos y Picos de Europa)</span>
+          <details><summary>Saber más</summary><p>Un buitre que se alimenta de huesos: los deja caer desde el aire sobre las rocas para romperlos. En Espa&#241;a lleg&#243; a quedar solo en los Pirineos y se est&#225; reintroduciendo en otras monta&#241;as.</p><ul class="amenazas" aria-label="Amenazas"><li>Venenos ilegales</li><li>Choques con tendidos el&#233;ctricos</li><li>Escasez de alimento</li></ul><p class="creditos-animal">Foto: Wilfredor · <a href="https://commons.wikimedia.org/wiki/File:Gypaetus_barbatus_in_Alpenzoo_Innsbruck.jpg" rel="noopener" target="_blank">CC0</a></p></details>
         </div>
       </article>
     </div>
@@ -722,12 +998,27 @@ p{text-wrap:pretty}
       <p><strong>Estadísticas de visitas:</strong> para saber cuánta gente nos visita y qué apartados interesan más, usamos <a href="https://www.goatcounter.com/" rel="noopener" target="_blank">GoatCounter</a>, un contador de visitas sin cookies que no guarda tu dirección IP ni datos que te identifiquen. Solo registra datos anónimos y agregados: páginas vistas, desde qué web llegas, tipo de dispositivo y país aproximado, y si usas el buscador, los filtros o el reto (sin guardar lo que escribes ni tus respuestas).</p>
       <p><strong>Datos personales:</strong> esta web no tiene formularios de contacto ni recoge nombres, correos o teléfonos.</p>
     </details>
-    <details><summary>Créditos de las fotos (todas con licencia libre, vía Wikimedia Commons)</summary><ol><li>Oso polar: Andreas Weith, <a href="https://commons.wikimedia.org/wiki/File:Polar_bear_(Ursus_maritimus)_in_the_drift_ice_region_north_of_Svalbard.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Chimpanc&#233; com&#250;n: Giles Laurent, <a href="https://commons.wikimedia.org/wiki/File:013_Alpha_male_chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Pangol&#237;n chino: Yung-Lun Lin, <a href="https://commons.wikimedia.org/wiki/File:Manis_pentadactyla_pentadactyla_462300623.jpg" rel="noopener" target="_blank">CC BY 4.0</a></li><li>Anfibios afectados por el quitridio: Brian Gratwicke, <a href="https://commons.wikimedia.org/wiki/File:Atelopus_zeteki1.jpg" rel="noopener" target="_blank">CC BY 2.0</a></li><li>Mono narigudo: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Proboscis_monkey_(Nasalis_larvatus)_composite.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Lince ib&#233;rico: http://www.lynxexsitu.es, <a href="https://commons.wikimedia.org/wiki/File:Iberian_Lynx_hidding.JPG" rel="noopener" target="_blank">CC BY 3.0 es</a></li><li>Gavial indio: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Gharial_(Gavialis_gangeticus)_female_head.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Gorila occidental de las tierras bajas: H. Zell, <a href="https://commons.wikimedia.org/wiki/File:Gorilla_gorilla_gorilla_-_Loro_Parque_01.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Guacamayo militar: H. Zell, <a href="https://commons.wikimedia.org/wiki/File:Ara_militaris_-_Maroparque_02.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Tamarino bicolor: Cedricguppy - Loury C&#233;dric, <a href="https://commons.wikimedia.org/wiki/File:Saguinus_bicolor_-_Adulte_session_repas_-_Zoologique_Paris_10.JPG" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>L&#233;mur rufo blanco y negro: Diego Delso, <a href="https://commons.wikimedia.org/wiki/File:L%C3%A9mur_rufo_blanco_y_negro_(Varecia_variegata),_Isla_de_los_Lemures,_Madagascar,_2025-09-17,_DD_06.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Ajolote: FakirNL, <a href="https://commons.wikimedia.org/wiki/File:Ambystoma_mexicanum_in_Ouwehands_Dierenpark_01.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Leopardo de las nieves: kallerna, <a href="https://commons.wikimedia.org/wiki/File:Uncia_uncia_%C3%84ht%C3%A4ri_4.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Picozapato: Olaf Oliviero Riemer, <a href="https://commons.wikimedia.org/wiki/File:Balaeniceps_rex_(Schuhschnabel_-_Shoebill)_-_Weltvogelpark_Walsrode_2010-10.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>L&#233;mur de cola anillada: Francis C. Franklin, <a href="https://commons.wikimedia.org/wiki/File:Ring_tailed_lemur_portrait.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Angelote (&#225;ngel de mar): Julien Renoult, <a href="https://commons.wikimedia.org/wiki/File:Squatina_squatina_120867959.jpg" rel="noopener" target="_blank">CC BY 4.0</a></li><li>Mono dorado de nariz chata: Dinkun Chen, <a href="https://commons.wikimedia.org/wiki/File:RHINOPITHECUS_ROXELLANA_IN_SHENZHEN_SAFARI_PARK.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>&#193;guila filipina: Ramon FVelasquez, <a href="https://commons.wikimedia.org/wiki/File:Philippine_Eagle_Pithecophaga_jefferyi.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Panda gigante: Another one of my pictures: This photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract., <a href="https://commons.wikimedia.org/wiki/File:Ailuropoda_melanoleuca_(Panda_g%C3%A9ant)_-_445.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Esturi&#243;n beluga: Daniel D&#246;hne, <a href="https://commons.wikimedia.org/wiki/File:Hausen_(Huso_huso_L.)editDOB.JPG" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Proteo u olm: Arne Hodalič, <a href="https://commons.wikimedia.org/wiki/File:P_anguinus1.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Mandril: Sanjay Acharya, <a href="https://commons.wikimedia.org/wiki/File:Mandrill_at_SF_Zoo.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Ant&#237;lope saiga: Andrey Giljov, <a href="https://commons.wikimedia.org/wiki/File:Saiga_antelope_at_the_Stepnoi_Sanctuary.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Mariposa monarca: Thomas Bresson, <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_(7).jpg" rel="noopener" target="_blank">CC BY 2.0</a></li><li>Ranita de San Antonio: Christian Fischer, <a href="https://commons.wikimedia.org/wiki/File:Hyla_arborea,_juv_2.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Mono de nariz chata de Yunnan: Rod Waddington, <a href="https://commons.wikimedia.org/wiki/File:Yunnan_Snub-nosed_Monkey.jpg" rel="noopener" target="_blank">CC BY-SA 2.0</a></li><li>Tortuga angonoka: Hans Hillewaert, <a href="https://commons.wikimedia.org/wiki/File:Astrochelys_yniphora.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Buitre dorsiblanco africano: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:African_white-backed_vultures_(Gyps_africanus)_feeding_on_wildebeest_carcass_with_marabou_stork_and_R%C3%BCppell%27s_griffon_vulture_Serengeti.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Tigre: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Grulla de coronilla roja: Isiwal, <a href="https://commons.wikimedia.org/wiki/File:Gr%C3%BCnau_Manschurenkranich_Grus_japonensis-0835.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Portada (oso polar): ver la ficha del oso polar.</li></ol></details>
-    <details><summary>Novedades de la web · 4 de noviembre de 2026</summary><ul><li>4 de noviembre de 2026 · La web ya está publicada en salvemossushuellas.github.io y se ha preparado para aparecer en Google y Bing (mapa del sitio y datos para buscadores). El contador de visitas anónimo ya funciona.</li><li>3 de noviembre de 2026 · Nuevo: apartado «Colabora» con un botón para copiar y compartir el enlace de la web, barra con el reparto de las especies por categoría, botón para volver arriba, y sección «Privacidad, cookies y estadísticas» (la web sigue sin cookies; el contador de visitas anónimo se activará al publicarla).</li><li>31 de octubre de 2026 · Nuevo: la escala de riesgo de la UICN explicada de un vistazo, un buscador para encontrar cualquier animal por su nombre o su zona, y «El reto de las huellas», un pequeño cuestionario de cinco preguntas para comprobar lo aprendido.</li><li>27 de octubre de 2026 · Primera versión: 30 especies con su foto, su categoría de la Lista Roja, su historia y sus amenazas; las cinco grandes causas de extinción; casos de éxito; y qué puede hacer cada persona.</li></ul></details>
+    <details><summary>Créditos de las fotos (todas con licencia libre, vía Wikimedia Commons)</summary><ol><li>&#193;guila imperial ib&#233;rica: Juan lacruz, <a href="https://commons.wikimedia.org/wiki/File:Aquila_adalberti_(ad.).jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Oso polar: Andreas Weith, <a href="https://commons.wikimedia.org/wiki/File:Polar_bear_(Ursus_maritimus)_in_the_drift_ice_region_north_of_Svalbard.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Mariposa monarca: Thomas Bresson, <a href="https://commons.wikimedia.org/wiki/File:Danaus_plexippus_(7).jpg" rel="noopener" target="_blank">CC BY 2.0</a></li><li>Lobo et&#237;ope: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Ethiopian_wolf_(Canis_simensis_citernii)_2.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Guacamayo militar: H. Zell, <a href="https://commons.wikimedia.org/wiki/File:Ara_militaris_-_Maroparque_02.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Pangol&#237;n chino: Yung-Lun Lin, <a href="https://commons.wikimedia.org/wiki/File:Manis_pentadactyla_pentadactyla_462300623.jpg" rel="noopener" target="_blank">CC BY 4.0</a></li><li>Tapir malayo: Another one of my pictures:[[File:|150x150px]] This photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract., <a href="https://commons.wikimedia.org/wiki/File:Tapirus_indicus_(Tapir_de_Malaisie)_-_450.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Orangut&#225;n de Borneo: Ridwan0810, <a href="https://commons.wikimedia.org/wiki/File:Orangutan_Kalimantan.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Tigre: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Mono narigudo: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Proboscis_monkey_(Nasalis_larvatus)_composite.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Lince ib&#233;rico: http://www.lynxexsitu.es, <a href="https://commons.wikimedia.org/wiki/File:Iberian_Lynx_hidding.JPG" rel="noopener" target="_blank">CC BY 3.0 es</a></li><li>Gavial indio: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Gharial_(Gavialis_gangeticus)_female_head.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Gorila occidental de las tierras bajas: H. Zell, <a href="https://commons.wikimedia.org/wiki/File:Gorilla_gorilla_gorilla_-_Loro_Parque_01.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Tibur&#243;n ballena: Arturo de Frias Marques, <a href="https://commons.wikimedia.org/wiki/File:Whale_Shark_AdF.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Jirafa: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:South_African_giraffe_(Giraffa_camelopardalis_giraffa)_head_with_oxpecker_Kruger.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Tamarino bicolor: Cedricguppy - Loury C&#233;dric, <a href="https://commons.wikimedia.org/wiki/File:Saguinus_bicolor_-_Adulte_session_repas_-_Zoologique_Paris_10.JPG" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>L&#233;mur rufo blanco y negro: Diego Delso, <a href="https://commons.wikimedia.org/wiki/File:L%C3%A9mur_rufo_blanco_y_negro_(Varecia_variegata),_Isla_de_los_Lemures,_Madagascar,_2025-09-17,_DD_06.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Quebrantahuesos: Wilfredor, <a href="https://commons.wikimedia.org/wiki/File:Gypaetus_barbatus_in_Alpenzoo_Innsbruck.jpg" rel="noopener" target="_blank">CC0</a></li><li>Ajolote: FakirNL, <a href="https://commons.wikimedia.org/wiki/File:Ambystoma_mexicanum_in_Ouwehands_Dierenpark_01.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Leopardo de las nieves: kallerna, <a href="https://commons.wikimedia.org/wiki/File:Uncia_uncia_%C3%84ht%C3%A4ri_4.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Picozapato: Olaf Oliviero Riemer, <a href="https://commons.wikimedia.org/wiki/File:Balaeniceps_rex_(Schuhschnabel_-_Shoebill)_-_Weltvogelpark_Walsrode_2010-10.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>L&#233;mur de cola anillada: Francis C. Franklin, <a href="https://commons.wikimedia.org/wiki/File:Ring_tailed_lemur_portrait.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Angelote (&#225;ngel de mar): Julien Renoult, <a href="https://commons.wikimedia.org/wiki/File:Squatina_squatina_120867959.jpg" rel="noopener" target="_blank">CC BY 4.0</a></li><li>Elefante asi&#225;tico: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Sri_Lankan_elephant_(Elephas_maximus_maximus)_female_and_young_6.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Rinoceronte negro: Diego Delso, <a href="https://commons.wikimedia.org/wiki/File:Rinoceronte_negro_(Diceros_bicornis),_parque_nacional_del_lago_Nakuru,_Kenia,_2024-05-18,_DD_74.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Mono dorado de nariz chata: Dinkun Chen, <a href="https://commons.wikimedia.org/wiki/File:RHINOPITHECUS_ROXELLANA_IN_SHENZHEN_SAFARI_PARK.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>&#193;guila filipina: Ramon FVelasquez, <a href="https://commons.wikimedia.org/wiki/File:Philippine_Eagle_Pithecophaga_jefferyi.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Bonobo: Hans Hillewaert, <a href="https://commons.wikimedia.org/wiki/File:Pan_paniscus_(female).jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Koala: Till Niermann, <a href="https://commons.wikimedia.org/wiki/File:Koala_in_Zoo_Duisburg.jpg" rel="noopener" target="_blank">CC BY 3.0</a></li><li>Chimpanc&#233; com&#250;n: Giles Laurent, <a href="https://commons.wikimedia.org/wiki/File:013_Alpha_male_chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Panda gigante: Another one of my pictures: This photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract., <a href="https://commons.wikimedia.org/wiki/File:Ailuropoda_melanoleuca_(Panda_g%C3%A9ant)_-_445.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Ballena azul: NMFS Northeast Fisheries Science Center (NOAA), <a href="https://commons.wikimedia.org/wiki/File:Bluewhale877.jpg" rel="noopener" target="_blank">Public domain</a></li><li>Elefante africano de sabana: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Desert_elephant_(Loxodonta_africana)_spraying_sand.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Esturi&#243;n beluga: Daniel D&#246;hne, <a href="https://commons.wikimedia.org/wiki/File:Hausen_(Huso_huso_L.)editDOB.JPG" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Proteo u olm: Arne Hodalič, <a href="https://commons.wikimedia.org/wiki/File:P_anguinus1.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Elefante africano de bosque: Thomas Breuer, <a href="https://commons.wikimedia.org/wiki/File:Loxodontacyclotis.jpg" rel="noopener" target="_blank">CC BY 2.5</a></li><li>Rinoceronte de Java: Scott Nelson, <a href="https://commons.wikimedia.org/wiki/File:Lesser_One_Horned_Rhinoceros_Rhinoceros_Sondaicus_(53549614).jpeg" rel="noopener" target="_blank">CC BY 3.0</a></li><li>Hipop&#243;tamo: Diego Delso, <a href="https://commons.wikimedia.org/wiki/File:Hipop%C3%B3tamo_(Hippopotamus_amphibius),_parque_nacional_de_Chobe,_Botsuana,_2018-07-28,_DD_82.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Mandril: Sanjay Acharya, <a href="https://commons.wikimedia.org/wiki/File:Mandrill_at_SF_Zoo.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Okapi: k7hpn, <a href="https://commons.wikimedia.org/wiki/File:Okapi_(Okapia_johnstoni).jpg" rel="noopener" target="_blank">CC BY 2.0</a></li><li>Ping&#252;ino africano: Sander Spek, <a href="https://commons.wikimedia.org/wiki/File:Sander-pinguins.jpg" rel="noopener" target="_blank">Public domain</a></li><li>Ant&#237;lope saiga: Andrey Giljov, <a href="https://commons.wikimedia.org/wiki/File:Saiga_antelope_at_the_Stepnoi_Sanctuary.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Grulla de coronilla roja: Isiwal, <a href="https://commons.wikimedia.org/wiki/File:Gr%C3%BCnau_Manschurenkranich_Grus_japonensis-0835.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Ranita de San Antonio: Christian Fischer, <a href="https://commons.wikimedia.org/wiki/File:Hyla_arborea,_juv_2.jpg" rel="noopener" target="_blank">CC BY-SA 3.0</a></li><li>Guepardo: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Cheetah_(Acinonyx_jubatus)_female_2.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Kakapo: Department of Conservation, <a href="https://commons.wikimedia.org/wiki/File:Kakapo_Sirocco_1.jpg" rel="noopener" target="_blank">CC BY 2.0</a></li><li>Mono de nariz chata de Yunnan: Rod Waddington, <a href="https://commons.wikimedia.org/wiki/File:Yunnan_Snub-nosed_Monkey.jpg" rel="noopener" target="_blank">CC BY-SA 2.0</a></li><li>Buitre dorsiblanco africano: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:African_white-backed_vultures_(Gyps_africanus)_feeding_on_wildebeest_carcass_with_marabou_stork_and_R%C3%BCppell%27s_griffon_vulture_Serengeti.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Tortuga carey: Diego Delso, <a href="https://commons.wikimedia.org/wiki/File:Tortuga_carey_(Eretmochelys_imbricata),_parque_nacional_Ras_Muhammad,_Egipto,_2022-03-28,_DD_56.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Vis&#243;n europeo: zoofanatic, <a href="https://commons.wikimedia.org/wiki/File:European_Mink_at_Osnabr%C3%BCck_Zoo_01.jpg" rel="noopener" target="_blank">CC BY 2.0</a></li><li>Le&#243;n: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Lion_(Panthera_leo)_old_male_Chobe.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Ornitorrinco: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:Duck-billed_platypus_(Ornithorhynchus_anatinus)_Scottsdale.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Anfibios afectados por el quitridio: Brian Gratwicke, <a href="https://commons.wikimedia.org/wiki/File:Atelopus_zeteki1.jpg" rel="noopener" target="_blank">CC BY 2.0</a></li><li>Tortuga angonoka: Hans Hillewaert, <a href="https://commons.wikimedia.org/wiki/File:Astrochelys_yniphora.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Rinoceronte blanco: Giles Laurent, <a href="https://commons.wikimedia.org/wiki/File:075_White_rhinoceros_mother_and_her_newborn_baby_in_the_Kalahari_Desert_of_Namibia_Photo_by_Giles_Laurent.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>C&#243;ndor de California: Stacy from San Diego, <a href="https://commons.wikimedia.org/wiki/File:Gymnogyps_californianus_-San_Diego_Zoo-8a.jpg" rel="noopener" target="_blank">CC BY 2.0</a></li><li>Foca monje del Mediterr&#225;neo: Wanax01, <a href="https://commons.wikimedia.org/wiki/File:Young_monk_seal.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Nutria marina: Mike Baird from Morro Bay, USA (bairdphotos.com), <a href="https://commons.wikimedia.org/wiki/File:Sea-otter-morro-bay_13.jpg" rel="noopener" target="_blank">CC BY 2.0</a></li><li>Vaquita marina: Paula Olson, NOAA, <a href="https://commons.wikimedia.org/wiki/File:Vaquita4_Olson_NOAA.jpg" rel="noopener" target="_blank">Public domain</a></li><li>Lica&#243;n o perro salvaje africano: Charles J. Sharp, <a href="https://commons.wikimedia.org/wiki/File:African_wild_dog_(Lycaon_pictus_pictus)_head.jpg" rel="noopener" target="_blank">CC BY-SA 4.0</a></li><li>Portada (oso polar): ver la ficha del oso polar.</li></ol></details>
+    <details><summary>Novedades de la web · 5 de noviembre de 2026</summary><ul><li>5 de noviembre de 2026 · Nuevo: la web pasa de 30 a <b>60 especies</b> (elefantes, rinocerontes, vaquita marina, orangután, koala, pingüino africano, y también animales de España como el visón europeo, el águila imperial ibérica, la foca monje y el quebrantahuesos); el buscador ahora te avisa si el animal que buscas no está en peligro de extinción (por ejemplo, los animales domésticos o los muy comunes); y la web ya está también en inglés (botón «EN» arriba).</li><li>4 de noviembre de 2026 · La web ya está publicada en salvemossushuellas.github.io y se ha preparado para aparecer en Google y Bing (mapa del sitio y datos para buscadores). El contador de visitas anónimo ya funciona.</li><li>3 de noviembre de 2026 · Nuevo: apartado «Colabora» con un botón para copiar y compartir el enlace de la web, barra con el reparto de las especies por categoría, botón para volver arriba, y sección «Privacidad, cookies y estadísticas» (la web sigue sin cookies; el contador de visitas anónimo se activará al publicarla).</li><li>31 de octubre de 2026 · Nuevo: la escala de riesgo de la UICN explicada de un vistazo, un buscador para encontrar cualquier animal por su nombre o su zona, y «El reto de las huellas», un pequeño cuestionario de cinco preguntas para comprobar lo aprendido.</li><li>27 de octubre de 2026 · Primera versión: 30 especies con su foto, su categoría de la Lista Roja, su historia y sus amenazas; las cinco grandes causas de extinción; casos de éxito; y qué puede hacer cada persona.</li></ul></details>
   </div>
 </footer>
 
 <script>
+/* Textos del buscador para los animales que no están en la web (fuente de las categorías: Lista Roja de la UICN) */
+const BUS = {
+  encontrados: n => `${n} ${n === 1 ? 'animal encontrado' : 'animales encontrados'}`,
+  ademas: n => `(También aparece en ${n === 1 ? '1 ficha' : n + ' fichas'} de abajo.)`,
+  noLista: (t, url) => `<b>«${t}» no está en nuestra lista</b> de animales en peligro de extinción. Eso no quiere decir que no esté amenazado: puedes comprobarlo en la <a href="${url}" rel="noopener" target="_blank">Lista Roja de la UICN</a>.`,
+  domestico: '<b>No está en peligro de extinción.</b> Es un animal doméstico: lo crían las personas en todo el mundo, así que no corre riesgo de desaparecer.',
+  comun: nombre => `<b>No está en peligro de extinción.</b> ${nombre} está en la categoría «Preocupación menor» (LC) de la UICN: sigue siendo común en el mundo, aunque en algunas zonas pueda escasear. Por eso no aparece en esta web.`,
+  domesticos: ['perro','gato','vaca','toro','buey','caballo','yegua','poni','burro','asno','mula','oveja','cordero','cabra','cerdo','gallina','gallo','pollo','pavo','hamster','cobaya','periquito','canario','pez rojo'],
+  comunes: {'zorro':'El zorro rojo','jabali':'El jabalí','ciervo':'El ciervo rojo','corzo':'El corzo','lobo':'El lobo gris','lobo gris':'El lobo gris','oso pardo':'El oso pardo','mapache':'El mapache','puma':'El puma','coyote':'El coyote','ardilla':'La ardilla roja','gorrion':'El gorrión común','paloma':'La paloma bravía','mirlo':'El mirlo común','urraca':'La urraca','cuervo':'El cuervo','gaviota':'La gaviota patiamarilla','golondrina':'La golondrina común','ciguena':'La cigüeña blanca','flamenco':'El flamenco común','aguila real':'El águila real','buho real':'El búho real','delfin':'El delfín mular','delfin mular':'El delfín mular','cocodrilo del nilo':'El cocodrilo del Nilo','canguro':'El canguro rojo','rata':'La rata parda','raton':'El ratón doméstico','pato':'El ánade real (el pato común)','cisne':'El cisne vulgar','cabra montes':'La cabra montés','buitre leonado':'El buitre leonado','lagartija':'La lagartija ibérica'},
+  especiales: {
+    'conejo': 'El <b>conejo doméstico</b> no está en peligro, pero el <b>conejo europeo salvaje</b> sí: la UICN lo considera «en peligro» (EN) desde 2019 por las enfermedades y la pérdida de hábitat. Además es clave para el lince ibérico y el águila imperial, que se alimentan de él.',
+    'erizo': 'El <b>erizo europeo</b> no está en esta web, pero ojo: en 2024 la UICN lo pasó a «casi amenazado» (NT) porque su población está bajando en gran parte de Europa.',
+    'abeja': 'La <b>abeja de la miel</b> no está en peligro de extinción porque la crían los apicultores, pero muchas <b>abejas silvestres</b> sí están en declive por los pesticidas y la pérdida de flores.'
+  }
+};
 /* Filtro por categoría (sin JavaScript se ven todas las categorías, una debajo de otra) */
 (function(){
   const caja = document.getElementById('filtros'); if (!caja) return;
@@ -745,10 +1036,22 @@ p{text-wrap:pretty}
     const q = norm(inp.value.trim()); let n = 0;
     if (q) caja.querySelector('[data-cat=todas]').click();
     else { document.querySelectorAll('.animal').forEach(a => a.hidden = false); caja.querySelector('[aria-pressed=true]').click(); res.textContent = ''; return; }
-    document.querySelectorAll('.animal').forEach(a => { const ok = !q || norm(a.textContent).includes(q); a.hidden = !ok; if (ok) n++; });
-    document.querySelectorAll('.categoria').forEach(c => { if (q) c.hidden = !c.querySelector('.animal:not([hidden])'); });
-    res.textContent = q ? (n ? `${n} ${n === 1 ? 'animal encontrado' : 'animales encontrados'}` : 'No hay ningún animal con ese nombre en esta web.') : '';
+    document.querySelectorAll('.animal').forEach(a => { const ok = norm(a.textContent).includes(q); a.hidden = !ok; if (ok) n++; });
+    document.querySelectorAll('.categoria').forEach(c => { c.hidden = !c.querySelector('.animal:not([hidden])'); });
+    const info = queEs(q), limpio = inp.value.trim().replace(/[<>&"]/g, '');
+    if (info) res.innerHTML = info + (n ? ' ' + BUS.ademas(n) : '');
+    else if (n) res.textContent = BUS.encontrados(n);
+    else res.innerHTML = BUS.noLista(limpio, 'https://www.iucnredlist.org/search?query=' + encodeURIComponent(inp.value.trim()));
   });
+  /* Animales que no están en la lista: domésticos, silvestres comunes (categoría LC de la UICN) y casos especiales */
+  function queEs(q) {
+    const k = q.replace(/\s+/g, ' '), sing = k.replace(/(es|s)$/, '');
+    const igual = p => k === p || sing === p || k === p + 's' || k === p + 'es';
+    for (const p in BUS.especiales) if (igual(p)) return BUS.especiales[p];
+    if (BUS.domesticos.some(igual)) return BUS.domestico;
+    for (const p in BUS.comunes) if (igual(p)) return BUS.comun(BUS.comunes[p]);
+    return '';
+  }
   /* Reto: corrige las cinco preguntas */
   const reto = document.getElementById('reto-form'), rr = document.getElementById('reto-res');
   reto.addEventListener('submit', e => {
